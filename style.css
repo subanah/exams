@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Ubuntu", sans-serif;
+}
+ul , ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --white: #fff;
+    --black:#000;
+ }
+ body{
+     background: var(--white);
+     color: var(--black);
+     height: 100vh;
+ }
+ body.mode{
+     
+     --black: #fff;
+     --white:#000;
+ }
+/*password*/
+#pass{
+   height: 100vh;
+   background-color: var(--white);
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pass .wrapper{
+   display: flex;
+     padding: 5px;
+     background-color: var(--black);
+}
+#pass .wrapper input{
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    background-color: var(--white);
+}
+#pass .wrapper .btngrp{
+    display: flex;
+}
+#pass .wrapper button{
+    padding: 10px;
+    border: 0;
+}
+#pass .wrapper  .btn2{
+    display: none;
+}
+#pass .extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+
+}
+/*password end*/
+/*modes*/
+#icon-grp{
+    position: fixed;
+    top: 50%;
+    background-color: var(--white);
+    transform: translateY(-50%);
+}
+#icon-grp .btn-grp{
+    width: 40px;
+    height: 40px;
+   border: 1px solid var(--black);
+   overflow: hidden;
+}
+#icon-grp .btn-grp span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: var(--black);
+}
+
+/*modes end*/
+/*scrollbar*/
+#nav{
+    height: 100px;
+    display: flex;
+    box-shadow: 3px 3px 3px #ccc;
+    display: flex;
+    position: fixed;
+    width: 1296px;
+    background:var(--white);
+    top: 0;
+    left: 0;
+}
+
+#nav.active{
+   
+    width: 100vw;
+    top: 0;
+    left: 0;
+    animation: active 1s linear;
+    background-color:  #605553;
+}
+@keyframes active {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100px;
+    }
+}
+#nav .container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav ul li{
+    display: inline-block;
+    color: var(--black);
+    padding: 0px 80px;
+   
+}
+/*scrollbar end*/
+/*colour gen*/
+#clrgen{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clrgen button{
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    
+}
+/*colour gen end*/
